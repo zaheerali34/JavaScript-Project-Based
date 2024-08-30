@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.product-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.image_container {
+  display: flex;
+  align-items: start;
+}
+
+.image-gallery {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.image-gallery img {
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.image-gallery .image.selecteds {
+    border: 4px solid #59b3e0;
+    opacity: 1;
+}
+
+.image {
+  width: 60px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.main-image img {
+  width: 300px;
+}
+
+.product-details {
+  width: 30%;
+  margin-left: 1rem;
+}
+
+.product-details h3 {
+  color: #0080ff;
+  text-transform: uppercase;
+  font-size: 1.1vw;
+}
+
+.product-details h2 {
+  margin-top: 0;
+  font-size: 24px;
+  padding: 1rem 0;
+  font-size: 2.5vw;
+}
+
+.product-details p {
+  color: #797979;
+  padding: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.product-details h4 {
+  padding: 0 0 1rem 0;
+  font-size: 1.7rem;
+}
+
+.product-details h4 > span {
+  font-size: 0.9rem;
+  background-color: #0080ff63;
+  border-radius: 2px;
+  color: #0080ff;
+  padding: 5px 5px;
+}
+
+.price {
+  font-size: 20px;
+  color: #000;
+}
+
+.discount {
+  color: #0080ff;
+  margin-left: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.sizes {
+  margin: 20px 0;
+}
+
+.sizes label {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+.size-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.size-btn.selected {
+  background-color: #000000;
+  color: #fff;
+}
+
+.add-to-bag {
+  width: 100%;
+  background-color: #0080ff;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.add-to-bag:hover {
+  background-color: #43a1fe;
+}
